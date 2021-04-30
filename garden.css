@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.active{
+	display:block;
+}
+
+.inactive{
+	display:none;
+}
+
+.container {
+    display:flex;
+}
+
+.nav{
+    height: 100%;
+    width: 16%;
+}
+
+.nav-btn{
+    height: 80px;
+    margin: 20px;
+    border: 2px grey solid;
+}
