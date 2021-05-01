@@ -8,18 +8,26 @@ var pages = [];
 
 function init(){
 	pages = document.getElementsByClassName("page");
+	navigation = document.getElementsByClassName("nav-btn");
 	setActivePage(activePageIndex);
 }
 
 function setActivePage(newIndex){
 	var newPage = pages[newIndex];
 	var currentPage = pages[activePageIndex];
+	var newNav = navigation[newIndex];
+	var currentNav = navigation[activePageIndex];
 	if(currentPage){
 		currentPage.classList.add("inactive");
 		currentPage.classList.remove("active");
+		currentNav.classList.add("inactive");
+		currentNav.classList.remove("active");
+
 	}
 	newPage.classList.add("active");
 	newPage.classList.remove("inactive");
+	newNav.classList.add("active");
+	newNav.classList.remove("inactive");
 	activePageIndex = newIndex;
 }
 
@@ -39,3 +47,4 @@ function goToNextPage(){
 		setActivePage(0);
 	}
 }
+
