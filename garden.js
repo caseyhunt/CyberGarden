@@ -8,7 +8,7 @@ var pages = [];
 
 function init(){
 	pages = document.getElementsByClassName("page");
-
+	navigation = document.getElementsByClassName("nav-btn");
 	setActivePage(activePageIndex);
 }
 
