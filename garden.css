@@ -2,13 +2,29 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
+    font-family: "Open Sans";
 }
 
-.active{
+h1{
+  letter-spacing:1px;
+}
+
+h4{
+  font-size:12px;
+}
+
+h6{
+  font-size:12px;
+  letter-spacing:.8px;
+  margin-top:-5px;
+  color:#666;
+}
+
+.page.active{
 	display:block;
 }
 
-.inactive{
+.page.inactive{
 	display:none;
 }
 
@@ -17,12 +33,76 @@ body {
 }
 
 .nav{
-    height: 100%;
-    width: 16%;
+    max-height: 400px;
+    height:400px;
+    max-width: 130px;
+    width:130px;
+    background:#EDC557;
+    text-align: center;
+    padding-top:15px;
 }
 
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 35px !important;  /* Preferred icon size */
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  position:relative;
+
+  top: -15px !important;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
 .nav-btn{
-    height: 80px;
-    margin: 20px;
-    border: 2px grey solid;
+  height: 80px;
+  margin: 20px, 20px,20px,15px;
+}
+
+
+.nav-btn.active{
+    color: black !important;
+}
+
+.nav-btn.inactive{
+    color: grey !important;
+}
+
+
+.section-content{
+  padding-top: 20px;
+  padding-left:40px;
+  padding-right:0px;
+  background: #f0f0f0;
+  width:670px;
+  max-width:670px;
+}
+
+.section-body{
+  padding-left: -10px;
+}
+
+.overview{
+  width:200px;
+  height:150px;
+  margin-left:10px;
+  background-color: #fff;
+  border: 2px grey solid;
+  float:left;
 }
