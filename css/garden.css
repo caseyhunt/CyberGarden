@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans";
+  border: 0px !important;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 12px;
+  letter-spacing: .8px;
+  margin-top: -5px;
+  color: #808080;
+}
+
+canvas {
+  position: relative;
+  top: -11%;
+}
+
+.page.active, .active {
+  display: block;
+}
+
+.page.inactive, .hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+}
+
+.nav {
+  max-height: 400px;
+  height: 400px;
+  max-width: 130px;
+  width: 130px;
+  background: #EDC557;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 35px !important;
+  /* Preferred icon size */
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  position: relative;
+  top: -15px !important;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons-outlined.sm {
+  font-size: 25px !important;
+  /* Preferred icon size */
+}
+
+.nav-btn {
+  height: 80px;
+  margin: 20px, 20px, 20px, 15px;
+}
+
+.nav-btn.active {
+  color: black !important;
+}
+
+.nav-btn.inactive {
+  color: #7d5d07;
+}
+
+.section-content {
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-right: 0px;
+  background: #f7f7f7;
+  width: 670px;
+  max-width: 670px;
+}
+
+.section-body {
+  margin-left: -10px;
+}
+
+.overview {
+  width: 180px;
+  height: 130px;
+  margin-left: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px #666;
+  border-radius: 5px;
+  float: left;
+  padding: 10px;
+}
+
+.overview span {
+  vertical-align: top;
+  margin-top: 13px;
+  margin-right: 5px;
+  display: inline-flex;
+  color: #808080;
+}
+
+.overview h4 {
+  font-size: 14px;
+  color: #262626;
+  margin-top: 0px;
+}
+
+.detailed {
+  width: 410px;
+  height: 130px;
+  margin-left: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px #666;
+  border-radius: 5px;
+  float: left;
+  padding: 10px;
+}
+
+.time-series {
+  width: 625px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px #666;
+  border-radius: 5px;
+  float: left;
+  padding: 10px;
+}
+
+.animation {
+  animation: 1.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.vsc-initialized {
+  border: none !important;
+}
